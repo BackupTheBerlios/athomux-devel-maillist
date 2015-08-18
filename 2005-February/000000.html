@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Athomux-devel] Re: Visueller Editor f&#252;r Athomux Verdrahtung
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/athomux-devel/2005-February/index.html" >
+   <LINK REL="made" HREF="mailto:athomux-devel%40lists.berlios.de?Subject=Re%3A%20%5BAthomux-devel%5D%20%3D%3FISO-8859-1%3FQ%3FRe%3A_Visueller_Editor_f%3DFCr_Athomux_Verdrahtung%3F%3D&In-Reply-To=%3C89d1e7b805022112462183231a%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Athomux-devel] Re: Visueller Editor f&#252;r Athomux Verdrahtung</H1>
+    <B>Anselm R. Garbe</B> 
+    <A HREF="mailto:athomux-devel%40lists.berlios.de?Subject=Re%3A%20%5BAthomux-devel%5D%20%3D%3FISO-8859-1%3FQ%3FRe%3A_Visueller_Editor_f%3DFCr_Athomux_Verdrahtung%3F%3D&In-Reply-To=%3C89d1e7b805022112462183231a%40mail.gmail.com%3E"
+       TITLE="[Athomux-devel] Re: Visueller Editor f&#252;r Athomux Verdrahtung">garbeam at gmail.com
+       </A><BR>
+    <I>Mon Feb 21 21:46:18 CET 2005</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi,
+
+wie angek&#252;ndigt habe ich das ehem. POA-Projekt [1], an dem ich
+beteiligt war, als Grundlage f&#252;r einen Brick Editor [2] f&#252;r Athomux
+verwendet. Bis auf kleinere Feinschliffe ist er recht brauchbar aus
+meiner Sicht.
+
+[1] <A HREF="http://poa.berlios.de">http://poa.berlios.de</A>
+[2] <A HREF="http://wmi.modprobe.de/brickedit.tar.gz">http://wmi.modprobe.de/brickedit.tar.gz</A>
+
+Gebaut wird die Sache mit:
+
+tar xvzf brickeditor.tar.gz
+cd brickeditor/src
+qmake
+make
+
+wobei eine Qt3-Installation vorausgesetzt wird. Es sollte
+QTDIR=/usr/local/qt3 oder was in der jeweiligen Distribution &#252;blich
+ist, gesetzt werden (auf Debian d&#252;rfte der Kram unter /usr/qt3
+liegen).
+
+Die Bedienung funktioniert so, dass man sich einen Brick Baustein aus
+der Bibliothek links in den Canvas zieht, dann die I/Os konfiguriert
+und nach Belieben verdrahtet. Die Verdrahtung wird von einem
+intelligenten Routing-Algorithmus &#252;bernommen, kann bei Bedarf aber
+manuell angepasst werden. In den Einstellungen mu&#223; man dann nur noch
+den Editor einstellen und man kann dann via Klick auf Edit in der
+Brick-Konfiguration den in selbiger Konfiguration angegebenen Source
+editieren.
+
+Gleiches gilt f&#252;r Compile, ich denke die Bedienung sollte relativ
+intuitiv erahnbar sein :)
+
+Gru&#223;,
+-- 
+  Anselm R. Garbe  &gt;&lt;&gt;&lt;  www.ebrag.de  &gt;&lt;&gt;&lt;  GPG key: 0D73F361
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#0">[ date ]</a>
+              <a href="thread.html#0">[ thread ]</a>
+              <a href="subject.html#0">[ subject ]</a>
+              <a href="author.html#0">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/athomux-devel">More information about the Athomux-devel
+mailing list</a><br>
+</body></html>

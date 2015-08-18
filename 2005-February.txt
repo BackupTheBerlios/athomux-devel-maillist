@@ -1,0 +1,48 @@
+From garbeam at gmail.com  Mon Feb 21 21:46:18 2005
+From: garbeam at gmail.com (Anselm R. Garbe)
+Date: Mon, 21 Feb 2005 21:46:18 +0100
+Subject: [Athomux-devel] =?ISO-8859-1?Q?Re:_Visueller_Editor_f=FCr_Athomux_Verdrahtung?=
+In-Reply-To: <89d1e7b8050221045113b54308@mail.gmail.com>
+References: <89d1e7b805021005394e436925@mail.gmail.com>
+	 <89d1e7b8050221045113b54308@mail.gmail.com>
+Message-ID: <89d1e7b805022112462183231a@mail.gmail.com>
+
+Hi,
+
+wie angek?ndigt habe ich das ehem. POA-Projekt [1], an dem ich
+beteiligt war, als Grundlage f?r einen Brick Editor [2] f?r Athomux
+verwendet. Bis auf kleinere Feinschliffe ist er recht brauchbar aus
+meiner Sicht.
+
+[1] http://poa.berlios.de
+[2] http://wmi.modprobe.de/brickedit.tar.gz
+
+Gebaut wird die Sache mit:
+
+tar xvzf brickeditor.tar.gz
+cd brickeditor/src
+qmake
+make
+
+wobei eine Qt3-Installation vorausgesetzt wird. Es sollte
+QTDIR=/usr/local/qt3 oder was in der jeweiligen Distribution ?blich
+ist, gesetzt werden (auf Debian d?rfte der Kram unter /usr/qt3
+liegen).
+
+Die Bedienung funktioniert so, dass man sich einen Brick Baustein aus
+der Bibliothek links in den Canvas zieht, dann die I/Os konfiguriert
+und nach Belieben verdrahtet. Die Verdrahtung wird von einem
+intelligenten Routing-Algorithmus ?bernommen, kann bei Bedarf aber
+manuell angepasst werden. In den Einstellungen mu? man dann nur noch
+den Editor einstellen und man kann dann via Klick auf Edit in der
+Brick-Konfiguration den in selbiger Konfiguration angegebenen Source
+editieren.
+
+Gleiches gilt f?r Compile, ich denke die Bedienung sollte relativ
+intuitiv erahnbar sein :)
+
+Gru?,
+-- 
+  Anselm R. Garbe  ><><  www.ebrag.de  ><><  GPG key: 0D73F361
+
+
